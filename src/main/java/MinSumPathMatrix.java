@@ -5,12 +5,13 @@ import java.util.List;
 
 public class MinSumPathMatrix {
 
-    /**
-     * 64. Minimum Path Sum
-     * <a href="https://leetcode.com/problems/minimum-path-sum/description/">...</a>
-     */
     static List<PathNode> path = new ArrayList<>();
 
+    /**
+     * <a href="https://leetcode.com/problems/minimum-path-sum/description/">64. Minimum Path Sum</a>
+     * @param grid
+     * @return
+     */
     public static int findMinSumPath(int[][] grid) {
         int rows = grid.length;
         int cols = grid[0].length;
