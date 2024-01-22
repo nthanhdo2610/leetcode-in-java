@@ -17,7 +17,7 @@ public class ReconstructFlightTicket {
         }
 
         List<String> result = new ArrayList<>();
-        dfs(start, map,result);
+        dfs(start, map, result);
 
         return result;
     }
@@ -25,7 +25,7 @@ public class ReconstructFlightTicket {
     private static void dfs(String depart, Map<String, PriorityQueue<String>> map, List<String> result) {
 
         PriorityQueue<String> destinations = map.getOrDefault(depart, new PriorityQueue<>());
-        while(!destinations.isEmpty()){
+        while (!destinations.isEmpty()) {
             dfs(destinations.poll(), map, result);
         }
 

@@ -11,7 +11,7 @@ public class MinimumDistanceBetweenWords {
             if (s.contains(w2)) {
                 to = i;
             }
-            i += s.length() + 1;
+            i += s.length() + 1; // plus 1 for space;
 
             if (from >= 0 && to >= 0) {
                 if (from > to) {

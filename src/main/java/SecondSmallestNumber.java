@@ -4,18 +4,18 @@ import java.util.Set;
 public class SecondSmallestNumber {
 
     public static int findSecondSmallest(int[] arr) {
-        Set<Integer> set = new HashSet<>();
+        Set<Integer> nums = new HashSet<>();
         for (int i : arr) {
-            set.add(i);
+            nums.add(i);
         }
-        if (set.size() < 2) return -1;
+        if (nums.size() < 2) return -1;
         int first = Integer.MAX_VALUE, second = Integer.MAX_VALUE;
-        for (int i : set) {
-            if (i < first) {
+        for (int n : nums) {
+            if (n < first) {
                 second = first;
-                first = i;
-            } else if (i != first && i <= second) {
-                second = i;
+                first = n;
+            } else if (n <= second) {
+                second = n;
             }
         }
         return second;

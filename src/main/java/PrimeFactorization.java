@@ -7,10 +7,13 @@ public class PrimeFactorization {
     public static List<Integer> primeFactorization(int n) {
         List<Integer> factors = new ArrayList<>();
 
-        for (int i = 2; i <= n; i++) {
-            while (n % i == 0) {
+        int i = 2;
+        while (i <= n) {
+            if (n % i == 0) {
                 factors.add(i);
                 n /= i;
+            } else {
+                i++;
             }
         }
 
@@ -18,10 +21,9 @@ public class PrimeFactorization {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter an integer: ");
-        int number = scanner.nextInt();
+        int number = sc.nextInt();
 
         if (number <= 1) {
             System.out.println("Prime factorization is not defined for numbers less than or equal to 1.");
@@ -31,6 +33,6 @@ public class PrimeFactorization {
             System.out.println("Prime factorization of " + number + ": " + primeFactors);
         }
 
-        scanner.close();
+        sc.close();
     }
 }

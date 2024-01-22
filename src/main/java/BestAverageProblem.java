@@ -4,35 +4,22 @@ import java.util.Map;
 public class BestAverageProblem {
 
     public static String[] findBestAverage(String[][] studentGrades) {
-        Map<String, Integer> sumGrades = new HashMap<>();
-        Map<String, Integer> countGrades = new HashMap<>();
-
-        // Calculate sum and count of grades for each student
-        for (String[] student : studentGrades) {
-            String name = student[0];
-            int grade = Integer.parseInt(student[1]);
-
-            sumGrades.put(name, sumGrades.getOrDefault(name, 0) + grade);
-            countGrades.put(name, countGrades.getOrDefault(name, 0) + 1);
+        Map<String, Integer> sum = new HashMap<>();
+        Map<String, Integer> cnt = new HashMap<>();
+        for (String[] grade : studentGrades) {
+            sum.put(grade[0], sum.getOrDefault(grade[0], 0) + Integer.parseInt(grade[1]));
+            cnt.put(grade[0], cnt.getOrDefault(grade[0], 0) + 1);
         }
-
-        // Find the student with the highest average grade
-        String bestStudent = null;
-        double bestAverage = 0.0;
-
-        for (Map.Entry<String, Integer> entry : sumGrades.entrySet()) {
-            String name = entry.getKey();
-            int sum = entry.getValue();
-            int count = countGrades.get(name);
-            double average = (double) sum / count;
-
-            if (average > bestAverage) {
-                bestAverage = average;
-                bestStudent = name;
+        double bestAvg = 0.0;
+        String student = "";
+        for (Map.Entry<String, Integer> entry : sum.entrySet()) {
+            int avg = entry.getValue() / cnt.get(entry.getKey());
+            if (avg > bestAvg) {
+                bestAvg = avg;
+                student = entry.getKey();
             }
         }
-
-        return new String[]{bestStudent, String.valueOf(bestAverage)};
+        return new String[]{student, String.valueOf(bestAvg)};
     }
 
     public static void main(String[] args) {

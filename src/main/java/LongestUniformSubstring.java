@@ -1,39 +1,32 @@
 public class LongestUniformSubstring {
 
-    public static String findLongestUniformSubstring(String input) {
-        if (input == null || input.length() == 0) {
-            return ""; // Return an empty string for an empty input or null input
+    public static String findLongestUniformSubstring(String s) {
+        if (s == null || s.length() < 1) {
+            return "";
         }
-
-        int start = 0; // Starting index of the current substring
-        int maxLength = 1; // Length of the longest uniform substring
-        int currentLength = 1; // Length of the current uniform substring
-
-        for (int i = 1; i < input.length(); i++) {
-            if (input.charAt(i) == input.charAt(i - 1)) {
-                currentLength++;
+        int start = 0;
+        int length = 1;
+        int crr = 1;
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i) == s.charAt(i - 1)) {
+                crr++;
             } else {
-                // If the current substring is longer than the longest one so far
-                if (currentLength > maxLength) {
-                    maxLength = currentLength;
-                    start = i - maxLength; // Update the starting index of the longest substring
+                if (crr > length) {
+                    length = crr;
+                    start = i - crr;
                 }
-
-                currentLength = 1; // Reset the length for the new character
+                crr = 1;
             }
         }
-
-        // Check the last substring in case it is the longest
-        if (currentLength > maxLength) {
-            maxLength = currentLength;
-            start = input.length() - maxLength;
+        if (crr > length) {
+            start = s.length() - crr;
+            length = crr;
         }
-
-        return input.substring(start, start + maxLength);
+        return s.substring(start, start + length);
     }
 
     public static void main(String[] args) {
-        String input = "aabbbbcccdd";
+        String input = "aabbbbccc";
         String longestUniformSubstring = findLongestUniformSubstring(input);
 
         System.out.println("Longest Uniform Substring: " + longestUniformSubstring);

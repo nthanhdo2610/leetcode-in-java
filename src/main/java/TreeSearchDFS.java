@@ -1,14 +1,10 @@
 public class TreeSearchDFS {
 
     public static void dfs(TreeNode root) {
-        if (root != null) {
-            // Process the current node (e.g., print its value)
-            System.out.print(root.val + " ");
-
-            // Recursively traverse the left and right subtrees
-            dfs(root.left);
-            dfs(root.right);
-        }
+        if (root == null) return;
+        System.out.print(root.val + " ");
+        dfs(root.left);
+        dfs(root.right);
     }
 
     public static void main(String[] args) {

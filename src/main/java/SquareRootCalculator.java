@@ -5,6 +5,7 @@ public class SquareRootCalculator {
     /**
      * Write a Java program that takes a user-inputted number and calculates its square root.
      * Ensure that the program handles cases where the input is negative and provides appropriate feedback.
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -19,8 +20,8 @@ public class SquareRootCalculator {
             System.out.println("Cannot calculate square root of a negative number.");
         } else {
             // Calculate and display the square root
-            double squareRoot = Math.sqrt(userInput);
-            System.out.println("Square root of " + userInput + " is: " + squareRoot);
+            double sqrt = Math.sqrt(userInput);
+            System.out.println("Square root of " + userInput + " is: " + sqrt);
         }
 
         // Close the scanner

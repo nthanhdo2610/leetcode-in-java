@@ -1,19 +1,10 @@
 public class DecimalToWords {
 
-    private static final String[] units = {
-            "", " One", " Two", " Three", " Four", " Five", " Six", " Seven", " Eight", " Nine"
-    };
-
-    private static final String[] teens = {
-            "", " Eleven", " Twelve", " Thirteen", " Fourteen", " Fifteen", " Sixteen",
-            " Seventeen", " Eighteen", " Nineteen"
-    };
-
-    private static final String[] tens = {
-            "", " Ten", " Twenty", " Thirty", " Forty", " Fifty", " Sixty", " Seventy", " Eighty", " Ninety"
-    };
-
-    private static final String[] thousands = {"", " Thousand", " Million", " Billion"};
+    public static String[] units = new String[]{"", "One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "};
+    public static String[] teens = new String[]{"", "Eleven ", "Twelve ", "Thirteen ", "Fourteen ", "Fifteen ", "Sixteen ", "Seventeen ", "Eighteen ", "Nineteen "};
+    public static String[] tens = new String[]{"", "Ten ", "Twenty ", "Thirty ", "Forty ", "Fifty ", "Sixty ", "Seventy ", "Eighty ", "Ninety "};
+    public static String HUNDRED = "Hundred ";
+    public static String[] thousands = new String[]{"", "Thousand ", "Million ", "Billion "};
 
     public static String convertToWords(int num) {
         if (num == 0) {
@@ -21,31 +12,25 @@ public class DecimalToWords {
         }
 
         int i = 0;
-        String words = "";
+        StringBuilder words = new StringBuilder();
 
         while (num > 0) {
-            if (num % 1000 != 0) {
-                words = helper(num % 1000) + thousands[i] + words;
+            if (num % 1000 > 0) {
+                words.insert(0, converter(num % 1000) + thousands[i]);
             }
             num /= 1000;
             i++;
         }
 
-        return words.trim();
+        return words.toString().trim();
     }
 
-    private static String helper(int num) {
-        if (num == 0) {
-            return "";
-        } else if (num < 10) {
-            return units[num];
-        } else if (num < 20) {
-            return teens[num - 10];
-        } else if (num < 100) {
-            return tens[num / 10] + helper(num % 10);
-        } else {
-            return units[num / 100] + " Hundred" + helper(num % 100);
-        }
+    private static String converter(int num) {
+        if (num == 0) return "";
+        if (num < 10) return units[num];
+        if (num < 20) return teens[num - 10];
+        if (num < 100) return tens[num / 10] + converter(num % 10);
+        else return units[num / 100] + HUNDRED + converter(num % 100);
     }
 
     public static void main(String[] args) {

@@ -1,18 +1,16 @@
 public class BinarySearch {
 
     public static int binarySearch(int[] array, int target) {
-        int left = 0;
-        int right = array.length - 1;
-
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-
+        int low = 0;
+        int high = array.length - 1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
             if (array[mid] == target) {
-                return mid; // Target found, return the index
-            } else if (array[mid] < target) {
-                left = mid + 1; // Search the right half
+                return mid;
+            } else if (target > array[mid]) {
+                low = mid + 1;
             } else {
-                right = mid - 1; // Search the left half
+                high = mid - 1;
             }
         }
 
