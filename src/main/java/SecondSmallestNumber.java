@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,6 +28,7 @@ public class SecondSmallestNumber {
         System.out.println("Second smallest number in the array1: " + result1);
 
         int[] array2 = {3, 3, 1, 1, 5, 5}; // Duplicate elements
+//        Arrays.sort(array2);
         int result2 = findSecondSmallest(array2);
         System.out.println("Second smallest number in the array2: " + result2);
 
