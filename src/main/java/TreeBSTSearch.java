@@ -1,19 +1,11 @@
 public class TreeBSTSearch {
 
-    public static TreeNode searchBST(TreeNode root, int target) {
+    public static TreeNode search(TreeNode node, int target) {
         // Base case: If the root is null or the target is found
-        if (root == null || root.val == target) {
-            return root;
+        if (node == null || node.val == target) {
+            return node;
         }
-
-        // If the target is smaller than the root's value, search in the left subtree
-        if (target < root.val) {
-            return searchBST(root.left, target);
-        }
-        // If the target is larger than the root's value, search in the right subtree
-        else {
-            return searchBST(root.right, target);
-        }
+        return target < node.val ? search(node.left, target) : search(node.right, target);
     }
 
     public static void main(String[] args) {
@@ -32,7 +24,7 @@ public class TreeBSTSearch {
         root.left.right = new TreeNode(3);
 
         int targetValue = 2;
-        TreeNode result = searchBST(root, targetValue);
+        TreeNode result = search(root, targetValue);
 
         if (result != null) {
             System.out.println("Node with value " + targetValue + " found in the BST.");

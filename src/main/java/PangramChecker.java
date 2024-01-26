@@ -13,10 +13,13 @@ public class PangramChecker {
     public static boolean isPangram(String sentence) {
         String s = sentence.toLowerCase();
         Set<Character> set = new HashSet<>();
+        for (char c = 'a'; c <= 'z'; c++) {
+            set.add(c);
+        }
         for (int i = 0; i < s.length(); i++) {
             if (Character.isLetter(s.charAt(i))) {
-                set.add(s.charAt(i));
-                if (set.size() == 26) return true;
+                set.remove(s.charAt(i));
+                if (set.isEmpty()) return true;
             }
         }
         return false;

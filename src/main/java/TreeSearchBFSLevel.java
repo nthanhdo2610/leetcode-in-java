@@ -3,14 +3,13 @@ import java.util.Queue;
 
 public class TreeSearchBFSLevel {
 
-    public static int bfsSearchLevel(TreeNode root, int target) {
-        if (root == null)
+    public static int bfs(TreeNode node, int target) {
+        if (node == null)
             return -1; // Target not found
 
         Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
+        queue.offer(node);
         int level = 0;
-
         while (!queue.isEmpty()) {
             int size = queue.size();
 
@@ -43,7 +42,7 @@ public class TreeSearchBFSLevel {
         root.right.right = new TreeNode(20);
 
         int targetValue = 7;
-        int level = bfsSearchLevel(root, targetValue);
+        int level = bfs(root, targetValue);
 
         if (level != -1) {
             System.out.println("Level of value " + targetValue + " is: " + level);

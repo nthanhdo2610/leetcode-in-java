@@ -6,7 +6,6 @@ public class PrimeFactorization {
 
     public static List<Integer> primeFactorization(int n) {
         List<Integer> factors = new ArrayList<>();
-
         int i = 2;
         while (i <= n) {
             if (n % i == 0) {

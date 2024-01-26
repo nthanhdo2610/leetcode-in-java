@@ -30,6 +30,6 @@ public class MissingLetters {
         String inputSentence = "The quick brown fox jumps over the lazy dog";
 
         // Call the method to find and print missing letters
-        findMissingLetters("inputSentence");
+        findMissingLetters(inputSentence);
     }
 }

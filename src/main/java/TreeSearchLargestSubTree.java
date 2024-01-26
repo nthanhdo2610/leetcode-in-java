@@ -18,15 +18,15 @@ public class TreeSearchLargestSubTree {
         if (node == null || (node.left == null && node.right == null)) return node;
         if (node.left == null) return node.right;
         if (node.right == null) return node.left;
-        int left = counter(node.left);
-        int right = counter(node.right);
+        int left = dfs(node.left);
+        int right = dfs(node.right);
         return left < right ? node.right : node.left;
     }
 
-    public static int counter(TreeNode node) {
+    public static int dfs(TreeNode node) {
         if (node == null) return 0;
-        int left = counter(node.left);
-        int right = counter(node.right);
+        int left = dfs(node.left);
+        int right = dfs(node.right);
         return 1 + left + right;
     }
 

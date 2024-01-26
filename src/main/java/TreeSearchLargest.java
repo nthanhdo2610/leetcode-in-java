@@ -1,10 +1,10 @@
 public class TreeSearchLargest {
 
-    public static int findLargest(TreeNode node) {
+    public static int dfs(TreeNode node) {
         if (node == null) return Integer.MIN_VALUE;
         int crr = node.val;
-        int maxLeft = findLargest(node.left);
-        int maxRight = findLargest(node.right);
+        int maxLeft = dfs(node.left);
+        int maxRight = dfs(node.right);
         return Math.max(crr, Math.max(maxLeft, maxRight));
     }
 
@@ -19,7 +19,7 @@ public class TreeSearchLargest {
         root.right.left = new TreeNode(12);
         root.right.right = new TreeNode(20);
 
-        int largestNode = findLargest(root);
+        int largestNode = dfs(root);
 
         System.out.println("The largest node in the binary tree is: " + largestNode);
     }

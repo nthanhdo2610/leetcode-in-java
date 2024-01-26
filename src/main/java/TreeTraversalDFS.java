@@ -1,10 +1,10 @@
-public class TreeSearchDFS {
+public class TreeTraversalDFS {
 
-    public static void dfs(TreeNode root) {
-        if (root == null) return;
-        System.out.print(root.val + " ");
-        dfs(root.left);
-        dfs(root.right);
+    public static void dfs(TreeNode node) {
+        if (node == null) return;
+        System.out.print(node.val + " ");
+        dfs(node.left);
+        dfs(node.right);
     }
 
     public static void main(String[] args) {
