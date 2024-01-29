@@ -52,6 +52,9 @@ public class JdbcProblem {
                 result.add(new Customer(id, firstName, lastName, email, address));
             }
 
+            // Close the prepared statement
+            preparedStatement.close();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } finally {
