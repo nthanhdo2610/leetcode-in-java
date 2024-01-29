@@ -14,12 +14,15 @@ public class JdbcProblem {
     private static final String url = "jdbc:postgresql://localhost:5432/postgres";
     private static final String user = "admin";
     private static final String password = "admin12345";
+    private static final String SQL_QUERY_INSERT = "INSERT INTO customer (first_name, last_name, email, address) VALUES (?, ?, ?, ?)";
+    private static final String SQL_QUERY_SELECT = "SELECT * FROM customer WHERE email LIKE '%@gmail.com'";
 
 
     public static void main(String[] args) {
 
 //        initCustomerData();
-        findCustomer();
+        List<Customer> customers = findCustomer();
+        System.out.println(customers.size());
 
     }
 
@@ -33,11 +36,11 @@ public class JdbcProblem {
             connection = DriverManager.getConnection(url, user, password);
 
             // Create a query statement with a condition
-            String sqlQuery = "SELECT * FROM customer WHERE email LIKE '%@gmail.com'";
-            preparedStatement = connection.prepareStatement(sqlQuery);
+            preparedStatement = connection.prepareStatement(SQL_QUERY_SELECT);
 
             // Execute the query
             resultSet = preparedStatement.executeQuery();
+
             // Process the result set
             while (resultSet.next()) {
                 // Retrieve data from the result set
@@ -75,10 +78,10 @@ public class JdbcProblem {
             customers.add(new Customer(firstName, lastName, email, address));
         }
 
-        insertSampleCustomers(customers);
+        insert(customers);
     }
 
-    private static void insertSampleCustomers(List<Customer> customers) {
+    private static void insert(List<Customer> customers) {
 
         Connection connection = null;
         PreparedStatement preparedStatement;
@@ -90,8 +93,7 @@ public class JdbcProblem {
             connection.setAutoCommit(false);
 
             // Create a query statement with placeholders
-            String sqlQuery = "INSERT INTO customer (first_name, last_name, email, address) VALUES (?, ?, ?, ?)";
-            preparedStatement = connection.prepareStatement(sqlQuery);
+            preparedStatement = connection.prepareStatement(SQL_QUERY_INSERT);
 
             // Insert 100 sample customer records
             for (Customer customer : customers) {
