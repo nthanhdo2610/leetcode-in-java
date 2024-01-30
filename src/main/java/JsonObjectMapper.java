@@ -12,7 +12,7 @@ import java.util.Set;
 public class JsonObjectMapper {
 
     public static void main(String[] args) {
-        String filePath = "./src/main/resources/json/data.json";
+        String filePath = "src/main/resources/json/static_data.json";
         try {
             // Create an ObjectMapper instance
             ObjectMapper mapper = new ObjectMapper();
