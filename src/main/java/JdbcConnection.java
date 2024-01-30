@@ -24,12 +24,12 @@ public class JdbcConnection {
 
 //        initCustomerData();
 //        List<Customer> customers = findCustomer();
-        List<Customer> customers = findCustomerByEmail();
+        List<Customer> customers = findCustomerByEmail("christiane.roob@gmail.com");
         System.out.println(customers.size());
 
     }
 
-    public static List<Customer> findCustomerByEmail() {
+    public static List<Customer> findCustomerByEmail(String emailAddress) {
         Connection connection = null;
         CallableStatement statement;
         ResultSet resultSet;
@@ -40,7 +40,7 @@ public class JdbcConnection {
 
             // Create a query statement with a condition
             statement = connection.prepareCall(SP_FIND_CUSTOMER_BY_EMAIL);
-            statement.setString(1, "christiane.roob@gmail.com");
+            statement.setString(1, emailAddress);
 
             // Execute the query
             resultSet = statement.executeQuery();
