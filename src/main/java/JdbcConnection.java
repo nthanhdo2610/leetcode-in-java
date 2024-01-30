@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JdbcProblem {
+public class JdbcConnection {
 
     // JDBC URL, username, and password of PostgresSQL server
     private static final String url = "jdbc:postgresql://localhost:5432/postgres";
