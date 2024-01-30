@@ -1,5 +1,6 @@
 import com.github.javafaker.Faker;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,16 +17,59 @@ public class JdbcConnection {
     private static final String password = "admin12345";
     private static final String SQL_QUERY_INSERT = "INSERT INTO customer (first_name, last_name, email, address) VALUES (?, ?, ?, ?)";
     private static final String SQL_QUERY_SELECT = "SELECT * FROM customer WHERE email LIKE '%@gmail.com'";
+    private static final String SP_FIND_CUSTOMER_BY_EMAIL = "{CALL find_customer_by_email(?)}";
 
 
     public static void main(String[] args) {
 
 //        initCustomerData();
-        List<Customer> customers = findCustomer();
+//        List<Customer> customers = findCustomer();
+        List<Customer> customers = findCustomerByEmail();
         System.out.println(customers.size());
 
     }
 
+    public static List<Customer> findCustomerByEmail() {
+        Connection connection = null;
+        CallableStatement statement;
+        ResultSet resultSet;
+
+        List<Customer> result = new ArrayList<>();
+        try {
+            connection = DriverManager.getConnection(url, user, password);
+
+            // Create a query statement with a condition
+            statement = connection.prepareCall(SP_FIND_CUSTOMER_BY_EMAIL);
+            statement.setString(1, "christiane.roob@gmail.com");
+
+            // Execute the query
+            resultSet = statement.executeQuery();
+
+            // Process the result set
+            while (resultSet.next()) {
+                // Retrieve data from the result set
+                int id = resultSet.getInt("customer_id");
+                String firstName = resultSet.getString("first_name");
+                String lastName = resultSet.getString("last_name");
+                String email = resultSet.getString("email");
+                String address = resultSet.getString("address");
+                result.add(new Customer(id, firstName, lastName, email, address));
+            }
+            statement.close();
+            resultSet.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            // Close the resources
+            try {
+                if (connection != null) connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
     public static List<Customer> findCustomer() {
         Connection connection = null;
         PreparedStatement preparedStatement;
