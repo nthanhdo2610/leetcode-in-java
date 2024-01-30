@@ -1,0 +1,752 @@
+{
+  "result_count": 25,
+  "results": [
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 6837,
+        "key": "OSDGITTV00001255",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/6837"
+      },
+      "create_ts": "2018-09-10T11:00:16.602522+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/241",
+      "dock_ref_nbr": "ITTV-A-01",
+      "location_id": {
+        "id": 20113,
+        "key": "ITTVA-00-Y-0-00-01",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/20113"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "IN",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2021-02-08T10:50:37.212602+01:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 241,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITTV-A-01"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 4595,
+        "key": "59030",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/4595"
+      },
+      "create_ts": "2018-09-10T11:00:30.339004+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/242",
+      "dock_ref_nbr": "ITTV-A-02",
+      "location_id": {
+        "id": 20114,
+        "key": "ITTVA-00-Y-0-00-02",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/20114"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "IN/OUT ",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-09-15T18:01:40.694214+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 242,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITTV-A-02"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": {
+        "id": 4833,
+        "key": "OSDGITTV00000714",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/4833"
+      },
+      "create_ts": "2018-09-26T15:21:47.074663+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/243",
+      "dock_ref_nbr": "ITTV-A-03",
+      "location_id": {
+        "id": 20115,
+        "key": "ITTVA-00-Y-0-00-03",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/20115"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "OUT ",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-10-06T17:56:52.712084+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 243,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-A-03"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": {
+        "id": 4853,
+        "key": "61095",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/4853"
+      },
+      "create_ts": "2018-09-26T15:22:36.701652+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/245",
+      "dock_ref_nbr": "ITTV-A-05",
+      "location_id": {
+        "id": 20117,
+        "key": "ITTVA-00-Y-0-00-05",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/20117"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "IN ",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-09-22T17:17:01.645835+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 245,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-A-05"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 5154,
+        "key": "OSDGITTV00000814",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/5154"
+      },
+      "create_ts": "2018-09-26T15:22:54.521864+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/246",
+      "dock_ref_nbr": "ITTV-A-06",
+      "location_id": {
+        "id": 20118,
+        "key": "ITTVA-00-Y-0-00-06",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/20118"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "IN/OUT ",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-10-07T14:33:21.248226+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 246,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-A-06"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 4554,
+        "key": "OSDGITTV00000554",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/4554"
+      },
+      "create_ts": "2018-09-26T15:23:10.416233+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/247",
+      "dock_ref_nbr": "ITTV-A-07",
+      "location_id": {
+        "id": 20119,
+        "key": "ITTVA-00-Y-0-00-07",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/20119"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "ENT / ENTRADA-JC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-08-06T10:36:15.531575+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 247,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-A-07"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 4693,
+        "key": "13011",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/4693"
+      },
+      "create_ts": "2018-09-26T15:23:30.482706+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/248",
+      "dock_ref_nbr": "ITTV-B-08",
+      "location_id": {
+        "id": 21672,
+        "key": "ITTVB-00-Y-0-00-08",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/21672"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "ENT / ENTRADA-JC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-10-27T16:05:54.910573+01:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 248,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-B-08"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": {
+        "id": 4013,
+        "key": "52945",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/4013"
+      },
+      "create_ts": "2018-09-26T15:23:46.090221+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/249",
+      "dock_ref_nbr": "ITTV-B-09",
+      "location_id": {
+        "id": 21673,
+        "key": "ITTVB-00-Y-0-00-09",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/21673"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "ENT / ENTRADA-JC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-06-25T16:25:42.419451+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 249,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-B-09"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 5235,
+        "key": "OSDGITTV00000854",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/5235"
+      },
+      "create_ts": "2018-09-26T15:24:01.262155+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/250",
+      "dock_ref_nbr": "ITTV-B-10",
+      "location_id": {
+        "id": 21674,
+        "key": "ITTVB-00-Y-0-00-10",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/21674"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-11-05T11:45:48.079098+01:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 250,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-B-10"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 5835,
+        "key": "OSDGITTV00000914",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/5835"
+      },
+      "create_ts": "2018-09-26T15:24:16.122163+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/251",
+      "dock_ref_nbr": "ITTV-B-11",
+      "location_id": {
+        "id": 21675,
+        "key": "ITTVB-00-Y-0-00-11",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/21675"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-12-09T18:19:09.973793+01:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 251,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-B-11"
+    },
+    {
+      "mod_user": "rhalimman",
+      "load_id": {
+        "id": 4756,
+        "key": "OSDGITTV00000654",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/4756"
+      },
+      "create_ts": "2018-09-26T15:24:28.023300+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/252",
+      "dock_ref_nbr": "ITTV-B-12",
+      "location_id": {
+        "id": 21676,
+        "key": "ITTVB-00-Y-0-00-12",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/21676"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-09-21T19:07:27.609349+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 252,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-B-12"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 6953,
+        "key": "OSDGITTV00001354",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/6953"
+      },
+      "create_ts": "2018-09-26T15:24:47.009710+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/253",
+      "dock_ref_nbr": "ITTV-B-13",
+      "location_id": {
+        "id": 21677,
+        "key": "ITTVB-00-Y-0-00-13",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/21677"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2021-02-15T10:28:49.208834+01:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 253,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-B-13"
+    },
+    {
+      "mod_user": "rhalimman",
+      "load_id": {
+        "id": 3061,
+        "key": "OSDGITTV00000078",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/3061"
+      },
+      "create_ts": "2018-09-26T15:26:08.051110+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/255",
+      "dock_ref_nbr": "ITTV-C-15",
+      "location_id": {
+        "id": 23971,
+        "key": "ITTVC-00-Y-0-00-15",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/23971"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "ENT / ENTRADA-JC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2021-01-20T06:19:26.130622+01:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 255,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-C-15"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 6254,
+        "key": "OSDGITTV00001074",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/6254"
+      },
+      "create_ts": "2018-09-26T15:26:18.481126+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/256",
+      "dock_ref_nbr": "ITTV-C-16",
+      "location_id": {
+        "id": 23972,
+        "key": "ITTVC-00-Y-0-00-16",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/23972"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "ENT / ENTRADA-JC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-12-28T12:32:54.418847+01:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 256,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-C-16"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 5114,
+        "key": "OSDGITTV00000794",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/5114"
+      },
+      "create_ts": "2018-09-26T15:26:29.772615+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/257",
+      "dock_ref_nbr": "ITTV-C-17",
+      "location_id": {
+        "id": 23973,
+        "key": "ITTVC-00-Y-0-00-17",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/23973"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-10-06T17:25:11.679539+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 257,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-C-17"
+    },
+    {
+      "mod_user": "szedda",
+      "load_id": {
+        "id": 4774,
+        "key": "OSDGITTV00000674",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/4774"
+      },
+      "create_ts": "2018-09-26T15:26:57.003145+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/259",
+      "dock_ref_nbr": "ITTV-C-19",
+      "location_id": {
+        "id": 23975,
+        "key": "ITTVC-00-Y-0-00-19",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/23975"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-09-16T10:16:19.985068+02:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 259,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-C-19"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": {
+        "id": 3853,
+        "key": "OSDGITTV00000354",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/3853"
+      },
+      "create_ts": "2018-09-26T15:27:09.588698+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/260",
+      "dock_ref_nbr": "ITTV-C-20",
+      "location_id": {
+        "id": 23976,
+        "key": "ITTVC-00-Y-0-00-20",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/23976"
+      },
+      "dock_type_id": {
+        "id": 127,
+        "key": "IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/127"
+      },
+      "status_id": 50,
+      "mod_ts": "2020-02-25T11:54:42.948780+01:00",
+      "facility_id": {
+        "id": 445,
+        "key": "ITTV",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/445"
+      },
+      "id": 260,
+      "create_user": "degirolami_adm",
+      "dock_nbr": "ITTV-C-20"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": {
+        "id": 2623,
+        "key": "LTEST_ROTATION_01",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/load/2623"
+      },
+      "create_ts": "2018-10-08T11:53:05.568653+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/261",
+      "dock_ref_nbr": "ITFC-A-01",
+      "location_id": {
+        "id": 18196,
+        "key": "ITFCA-00-Y-0-00-01",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/18196"
+      },
+      "dock_type_id": {
+        "id": 129,
+        "key": "IN/OUT / IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/129"
+      },
+      "status_id": 50,
+      "mod_ts": "2018-10-08T11:57:19.551458+02:00",
+      "facility_id": {
+        "id": 446,
+        "key": "ITFC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/446"
+      },
+      "id": 261,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITFC-A-01"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": null,
+      "create_ts": "2018-10-08T11:53:20.691042+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/262",
+      "dock_ref_nbr": "ITFC-A-02",
+      "location_id": {
+        "id": 18197,
+        "key": "ITFCA-00-Y-0-00-02",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/18197"
+      },
+      "dock_type_id": {
+        "id": 129,
+        "key": "IN/OUT / IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/129"
+      },
+      "status_id": 10,
+      "mod_ts": "2018-10-08T11:53:20.691042+02:00",
+      "facility_id": {
+        "id": 446,
+        "key": "ITFC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/446"
+      },
+      "id": 262,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITFC-A-02"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": null,
+      "create_ts": "2018-10-08T11:53:32.405613+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/263",
+      "dock_ref_nbr": "ITFC-A-03",
+      "location_id": {
+        "id": 18198,
+        "key": "ITFCA-00-Y-0-00-03",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/18198"
+      },
+      "dock_type_id": {
+        "id": 129,
+        "key": "IN/OUT / IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/129"
+      },
+      "status_id": 10,
+      "mod_ts": "2018-10-08T11:53:32.405613+02:00",
+      "facility_id": {
+        "id": 446,
+        "key": "ITFC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/446"
+      },
+      "id": 263,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITFC-A-03"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": null,
+      "create_ts": "2018-10-08T11:54:00.644584+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/265",
+      "dock_ref_nbr": "ITFC-A-05",
+      "location_id": {
+        "id": 18200,
+        "key": "ITFCA-00-Y-0-00-05",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/18200"
+      },
+      "dock_type_id": {
+        "id": 129,
+        "key": "IN/OUT / IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/129"
+      },
+      "status_id": 10,
+      "mod_ts": "2018-10-08T11:54:00.644584+02:00",
+      "facility_id": {
+        "id": 446,
+        "key": "ITFC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/446"
+      },
+      "id": 265,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITFC-A-05"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": null,
+      "create_ts": "2018-10-08T11:54:42.935693+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/267",
+      "dock_ref_nbr": "ITFC-A-07",
+      "location_id": {
+        "id": 18202,
+        "key": "ITFCA-00-Y-0-00-07",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/18202"
+      },
+      "dock_type_id": {
+        "id": 129,
+        "key": "IN/OUT / IN/OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/129"
+      },
+      "status_id": 10,
+      "mod_ts": "2018-10-08T11:55:08.119157+02:00",
+      "facility_id": {
+        "id": 446,
+        "key": "ITFC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/446"
+      },
+      "id": 267,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITFC-A-07"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": null,
+      "create_ts": "2018-10-08T11:55:00.584703+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/268",
+      "dock_ref_nbr": "ITFC-A-08",
+      "location_id": {
+        "id": 18203,
+        "key": "ITFCA-00-Y-0-00-08",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/18203"
+      },
+      "dock_type_id": {
+        "id": 129,
+        "key": "ENT / ENTRADA-JC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/129"
+      },
+      "status_id": 10,
+      "mod_ts": "2018-10-08T11:55:00.584703+02:00",
+      "facility_id": {
+        "id": 446,
+        "key": "ITFC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/446"
+      },
+      "id": 268,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITFC-A-08"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": null,
+      "create_ts": "2018-10-08T11:55:36.820162+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/270",
+      "dock_ref_nbr": "ITFC-A-10",
+      "location_id": {
+        "id": 18205,
+        "key": "ITFCA-00-Y-0-00-10",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/18205"
+      },
+      "dock_type_id": {
+        "id": 129,
+        "key": "IN",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/129"
+      },
+      "status_id": 10,
+      "mod_ts": "2018-10-08T11:55:36.820162+02:00",
+      "facility_id": {
+        "id": 446,
+        "key": "ITFC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/446"
+      },
+      "id": 270,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITFC-A-10"
+    },
+    {
+      "mod_user": "pfurgiuele",
+      "load_id": null,
+      "create_ts": "2018-10-08T11:55:55.598694+02:00",
+      "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock/271",
+      "dock_ref_nbr": "ITFC-B-01",
+      "location_id": {
+        "id": 18206,
+        "key": "ITFCB-00-Y-0-00-01",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/location/18206"
+      },
+      "dock_type_id": {
+        "id": 129,
+        "key": "OUT",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/dock_type/129"
+      },
+      "status_id": 10,
+      "mod_ts": "2018-10-08T11:55:55.598694+02:00",
+      "facility_id": {
+        "id": 446,
+        "key": "ITFC",
+        "url": "https://tc2.wms.ocs.oraclecloud.com:443/degirolami_test/wms/lgfapi/v9/entity/facility/446"
+      },
+      "id": 271,
+      "create_user": "pfurgiuele",
+      "dock_nbr": "ITFC-B-01"
+    }
+  ]
+}
