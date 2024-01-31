@@ -16,8 +16,8 @@ public class JdbcConnection {
     private static final String user = "admin";
     private static final String password = "admin12345";
     private static final String SQL_QUERY_INSERT = "INSERT INTO customer (first_name, last_name, email, address) VALUES (?, ?, ?, ?)";
-    private static final String SQL_QUERY_SELECT = "SELECT * FROM customer WHERE email LIKE '%@gmail.com'";
-    private static final String SP_FIND_CUSTOMER_BY_EMAIL = "{CALL find_customer_by_email(?)}";
+    private static final String SQL_QUERY_SELECT = "SELECT * FROM customer WHERE email = ?";
+    private static final String FN_FIND_CUSTOMER_BY_EMAIL = "{CALL fn_find_customer_by_email(?)}";
 
 
     public static void main(String[] args) {
@@ -31,7 +31,8 @@ public class JdbcConnection {
 
     public static List<Customer> findCustomerByEmail(String emailAddress) {
         Connection connection = null;
-        CallableStatement statement;
+//        PreparedStatement preparedStatement;
+        CallableStatement callableStatement;
         ResultSet resultSet;
 
         List<Customer> result = new ArrayList<>();
@@ -39,11 +40,15 @@ public class JdbcConnection {
             connection = DriverManager.getConnection(url, user, password);
 
             // Create a query statement with a condition
-            statement = connection.prepareCall(SP_FIND_CUSTOMER_BY_EMAIL);
-            statement.setString(1, emailAddress);
+            callableStatement = connection.prepareCall(FN_FIND_CUSTOMER_BY_EMAIL);
+            callableStatement.setString(1, emailAddress);
+
+//            preparedStatement = connection.prepareStatement(SQL_QUERY_SELECT);
+//            preparedStatement.setString(1, emailAddress);
 
             // Execute the query
-            resultSet = statement.executeQuery();
+            resultSet = callableStatement.executeQuery();
+//            resultSet = preparedStatement.executeQuery();
 
             // Process the result set
             while (resultSet.next()) {
@@ -55,7 +60,8 @@ public class JdbcConnection {
                 String address = resultSet.getString("address");
                 result.add(new Customer(id, firstName, lastName, email, address));
             }
-            statement.close();
+            callableStatement.close();
+//            preparedStatement.close();
             resultSet.close();
 
         } catch (SQLException e) {

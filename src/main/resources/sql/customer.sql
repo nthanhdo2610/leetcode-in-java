@@ -9,8 +9,7 @@ CREATE TABLE customer
     address     VARCHAR(255)
 );
 
--- Create the stored procedure to find a customer by email
-CREATE OR REPLACE FUNCTION find_customer_by_email(pEmail VARCHAR)
+CREATE OR REPLACE FUNCTION fn_find_customer_by_email(pEmail VARCHAR)
 RETURNS SETOF customer AS
 $$
 BEGIN
