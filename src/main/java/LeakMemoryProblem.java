@@ -17,11 +17,11 @@ public class LeakMemoryProblem {
         collection2 = null;
 
         System.gc();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         collection3 = null;
         System.gc();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
 }
 
